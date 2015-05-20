@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E5C926E5-72E3-4C87-B3D0-6F313654C3B1</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Mailbox</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>869D2BCA95E6E18123DA71478032BD0633188B51</key>
+		<string>https://github.com/yl335/Week3-HW-Mailbox.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Mailbox.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>869D2BCA95E6E18123DA71478032BD0633188B51</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/yl335/Week3-HW-Mailbox.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>869D2BCA95E6E18123DA71478032BD0633188B51</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>869D2BCA95E6E18123DA71478032BD0633188B51</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Week3-HW-Carousel</string>
+		</dict>
+	</array>
+</dict>
+</plist>
