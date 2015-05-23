@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B53A3B0A1B1131FB004B5C57 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53A3B091B1131FB004B5C57 /* Common.swift */; };
 		B58A1B7C1B0C69320080706D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58A1B7B1B0C69320080706D /* AppDelegate.swift */; };
 		B58A1B7E1B0C69320080706D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58A1B7D1B0C69320080706D /* ViewController.swift */; };
 		B58A1B811B0C69320080706D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B58A1B7F1B0C69320080706D /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B53A3B091B1131FB004B5C57 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		B58A1B761B0C69320080706D /* Mailbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mailbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B58A1B7A1B0C69320080706D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B58A1B7B1B0C69320080706D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				B58A1B7D1B0C69320080706D /* ViewController.swift */,
 				B58A1B9F1B0CA0260080706D /* MailboxViewController.swift */,
 				B58A1B7F1B0C69320080706D /* Main.storyboard */,
+				B53A3B091B1131FB004B5C57 /* Common.swift */,
 				B58A1B821B0C69320080706D /* Images.xcassets */,
 				B58A1B791B0C69320080706D /* Supporting Files */,
 			);
@@ -211,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B53A3B0A1B1131FB004B5C57 /* Common.swift in Sources */,
 				B58A1B7E1B0C69320080706D /* ViewController.swift in Sources */,
 				B58A1B7C1B0C69320080706D /* AppDelegate.swift in Sources */,
 				B58A1BA01B0CA0260080706D /* MailboxViewController.swift in Sources */,

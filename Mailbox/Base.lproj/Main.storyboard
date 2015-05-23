@@ -36,6 +36,11 @@
                                                 <rect key="frame" x="0.0" y="79" width="320" height="86"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
+                                                    <view contentMode="scaleToFill" id="4xh-vZ-hWh" userLabel="Swipe Background View">
+                                                        <rect key="frame" x="0.0" y="0.0" width="320" height="86"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </view>
                                                     <view contentMode="scaleToFill" id="j8h-x8-y1a" userLabel="Right Swipe">
                                                         <rect key="frame" x="260" y="0.0" width="320" height="86"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -49,7 +54,7 @@
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                             </imageView>
                                                         </subviews>
-                                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     </view>
                                                     <view contentMode="scaleToFill" id="ehT-z8-Iof" userLabel="Left Swipe">
                                                         <rect key="frame" x="-260" y="0.0" width="320" height="86"/>
@@ -64,7 +69,7 @@
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                             </imageView>
                                                         </subviews>
-                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     </view>
                                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="message" id="jNx-JK-xe1">
                                                         <rect key="frame" x="0.0" y="0.0" width="320" height="86"/>
@@ -85,10 +90,79 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </scrollView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="nav" id="yCU-VR-UYv">
+                                    <view contentMode="scaleToFill" id="c4h-T6-3ZN" userLabel="Nav Container">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </imageView>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="bottom" image="nav" id="yCU-VR-UYv">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                            </imageView>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="blue_tab" id="DQY-09-qin">
+                                                <rect key="frame" x="60" y="22.5" width="200" height="40"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                            </imageView>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" image="green_tab" id="iUs-hu-2tU">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                            </imageView>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" image="yellow_tab" id="qGP-VD-Fu6">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="K5M-vc-rmz" userLabel="Compose Button">
+                                                <rect key="frame" x="270" y="25" width="46" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onPressComposeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LZ0-nH-Xqj"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eov-GO-Lbk" userLabel="Menu Button">
+                                                <rect key="frame" x="8" y="25" width="46" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onPressMenuButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="akQ-Hk-wxy"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="VYl-U2-e8B" userLabel="Yellow Tab Button">
+                                                <rect key="frame" x="68" y="25" width="60" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onPressYellowTab:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c3A-kT-W2P"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9SB-TF-Wgz" userLabel="Blue Tab Button">
+                                                <rect key="frame" x="130" y="25" width="60" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onPressBlueTab:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oT5-Q8-kHp"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MjY-Ux-WgC" userLabel="Green Tab Button">
+                                                <rect key="frame" x="190" y="25" width="60" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onPressGreenTab:" destination="BYZ-38-t0r" eventType="touchUpInside" id="miY-BA-0dx"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0ch-Pg-yva" userLabel="Reschedule Button">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -119,6 +193,69 @@
                                             <action selector="onDismissMenu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="62Q-ak-wZv"/>
                                         </connections>
                                     </button>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="yellow_screen" id="CJs-ut-vEN">
+                                        <rect key="frame" x="-320" y="65" width="320" height="503"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="green_screen" id="pTT-hg-oJH">
+                                        <rect key="frame" x="320" y="65" width="320" height="503"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" id="e9u-4Y-jjA" userLabel="Compose Container">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="compose" id="8SN-Qw-WVH">
+                                                <rect key="frame" x="0.0" y="20" width="320" height="264"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="d7l-Ki-pzf" userLabel="Cancel Button">
+                                                <rect key="frame" x="3" y="30" width="67" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onPressCancelComposeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PB9-7b-jDK"/>
+                                                </connections>
+                                            </button>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" id="33Z-2K-9ou" userLabel="To Field">
+                                                <rect key="frame" x="37" y="70" width="246" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" red="0.36470588235294116" green="0.71372549019607845" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" id="dEk-3X-0XX" userLabel="Subject Field">
+                                                <rect key="frame" x="78" y="110" width="205" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="y9D-gC-odL" userLabel="Undo Container">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="undo_modal" id="GVV-Ya-6hU">
+                                                <rect key="frame" x="25" y="200" width="270" height="159"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gbB-G1-oUz" userLabel="Undo Button">
+                                                <rect key="frame" x="158" y="316" width="137" height="43"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onPressUndoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="maM-JO-VTE"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -129,9 +266,18 @@
                     <size key="freeformSize" width="320" height="568"/>
                     <connections>
                         <outlet property="archiveIcon" destination="RoB-NW-k1o" id="ANU-Xh-Klt"/>
+                        <outlet property="blueButton" destination="9SB-TF-Wgz" id="RTm-Vg-mK5"/>
+                        <outlet property="blueMessageView" destination="6yv-6v-CZh" id="VOT-xZ-08d"/>
+                        <outlet property="blueNavView" destination="yCU-VR-UYv" id="SKZ-cb-6HF"/>
+                        <outlet property="blueTabView" destination="DQY-09-qin" id="B96-0p-tkO"/>
+                        <outlet property="composeView" destination="8SN-Qw-WVH" id="FYi-Oe-eud"/>
+                        <outlet property="composerContainerView" destination="e9u-4Y-jjA" id="8eh-mI-SaS"/>
                         <outlet property="contentView" destination="fku-ow-sD9" id="OyI-W1-NTV"/>
                         <outlet property="deleteIcon" destination="E5k-ED-D7H" id="xHV-Fg-GZB"/>
                         <outlet property="feedImageView" destination="3QN-T0-WQa" id="d2q-6b-b9n"/>
+                        <outlet property="greenButton" destination="MjY-Ux-WgC" id="RNW-8a-HqT"/>
+                        <outlet property="greenMessageView" destination="pTT-hg-oJH" id="Jwi-u8-2Dk"/>
+                        <outlet property="greenTabView" destination="iUs-hu-2tU" id="hAA-YT-Cxp"/>
                         <outlet property="laterIcon" destination="47s-cO-SZN" id="nyq-JV-rlT"/>
                         <outlet property="leftSwipeView" destination="ehT-z8-Iof" id="HZQ-RX-1ZE"/>
                         <outlet property="listButton" destination="ePa-gz-bB2" id="roR-s1-bKd"/>
@@ -141,6 +287,12 @@
                         <outlet property="rescheduleButton" destination="0ch-Pg-yva" id="1k7-JM-sQm"/>
                         <outlet property="rightSwipeView" destination="j8h-x8-y1a" id="oA4-Lz-dhf"/>
                         <outlet property="showContentButton" destination="vdT-Ze-hQz" id="pSt-Dx-1gJ"/>
+                        <outlet property="swipeBackgroundView" destination="4xh-vZ-hWh" id="ReY-eV-peg"/>
+                        <outlet property="toTextField" destination="33Z-2K-9ou" id="b5W-2w-aHn"/>
+                        <outlet property="undoContainerView" destination="y9D-gC-odL" id="0wh-hc-JFY"/>
+                        <outlet property="yellowButton" destination="VYl-U2-e8B" id="Ret-M2-Dnn"/>
+                        <outlet property="yellowMessageView" destination="CJs-ut-vEN" id="UAO-M9-sGH"/>
+                        <outlet property="yellowTabView" destination="qGP-VD-Fu6" id="iCz-9c-4Ry"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -150,8 +302,12 @@
     </scenes>
     <resources>
         <image name="archive_icon" width="25" height="25"/>
+        <image name="blue_tab" width="200" height="40"/>
+        <image name="compose" width="320" height="264"/>
         <image name="delete_icon" width="25" height="25"/>
         <image name="feed" width="320" height="1202"/>
+        <image name="green_screen" width="320" height="503"/>
+        <image name="green_tab" width="320" height="64"/>
         <image name="help_label" width="320" height="37"/>
         <image name="later_nav_icon" width="25" height="20"/>
         <image name="list" width="320" height="568"/>
@@ -161,6 +317,9 @@
         <image name="nav" width="320" height="65"/>
         <image name="reschedule" width="320" height="568"/>
         <image name="search" width="320" height="42"/>
+        <image name="undo_modal" width="270" height="159"/>
+        <image name="yellow_screen" width="320" height="503"/>
+        <image name="yellow_tab" width="320" height="64"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
